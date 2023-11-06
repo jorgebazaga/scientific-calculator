@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadoras</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <div>
+        <label for="calculatorType">Tipo de calculadora:</label>
+        <select id="calculatorType" onchange="changeCalculatorType()">
+            <option value="basic" selected>Básica</option>
+            <option value="scientific">Científica</option>
+        </select>
+    </div>
+    <div class="calculator">
+        <div class="ans" id="input"></div>
+            <div class="actions">
+                <div class="numbers">
+                    <div class="columns">
+                        <button class="operator" data-value="log">log</button>
+                        <button class="operator" data-value="M">M</button>
+                        <button class="operator" data-value="<="><=</button>
+                        <button class="operator" id="clear" data-value="C">C</button>
+                        <button class="operator" id="clearAll" data-value="CE">CE</button>
+                        <button class="operator" data-value="Rnd">Rnd</button>
+                    </div>
+                    
+                    <div class="columns">
+                        <button class="function" data-value="In">In</button>
+                        <button class="number" data-value="7">7</button>
+                        <button class="number" data-value="8">8</button>
+                        <button class="number" data-value="9">9</button>
+                        <button class="operator" data-value="/">/</button>
+                        <button class="function" data-value=x^2>x^2</button>
+                    </div>
+
+                    <div class="columns">
+                    <button class="function" data-value="e">e</button>
+                    <button class="number" data-value="4">4</button>
+                    <button class="number" data-value="5">5</button>
+                    <button class="number" data-value="6">6</button>
+                    <button class="operator" data-value="*">*</button>
+                    <button class="function" data-value="a^b">a^b</button>
+                    </div>
+
+                    <div class="columns">
+                    <button class="function" data-value="3.1416">π</button>
+                    <button class="number" data-value="1">1</button>
+                    <button class="number" data-value="2">2</button>
+                    <button class="number" data-value="3">3</button>
+                    <button class="operator" data-value="-">-</button>
+                    <button class="function" data-value="cos">cos</button>
+                    </div>
+
+                    <div class="columns">
+                    <button class="function" data-value="!">!</button>
+                    <button class="function" data-value="+/-">+/-</button>
+                    <button class="number" data-value="0">0</button>
+                    <button class="number" data-value=".">.</button>
+                    <button class="operator" data-value="+">+</button>
+                    <button class="function" data-value="sen">sen</button>
+                    </div>
+
+                    <div class="columns">
+                    <button class="function" data-value="mod">mod</button>
+                    <button class="function" data-value="1/x">1/x</button>
+                    <button class="function" data-value="√">√</button>
+                    <button class="operator" data-value="%">%</button>
+                    <button class="function" data-value="tan">tan</button>
+                    <button class="equal" id="result" data-value="=">=</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
+</html>
